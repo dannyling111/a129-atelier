@@ -1,0 +1,15 @@
+node_modules
+dist
+.output
+.nitro
+.tanstack
+*.log
+.DS_Store
+artifacts
+attachments
+screenshots
+.grok
+__pycache__
+*.pyc
+.env
+.env.*

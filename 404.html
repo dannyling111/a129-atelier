@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>atelier</title>
+    <script>
+      (function () {
+        var base = "/a129-atelier";
+        var rest = location.pathname.slice(base.length) || "/";
+        location.replace(base + "/" + (rest === "/" ? "" : "") + location.search + location.hash);
+      })();
+    </script>
+    <meta http-equiv="refresh" content="0; url=/a129-atelier/" />
+  </head>
+  <body>
+    <p><a href="/a129-atelier/">atelier 立绘馆</a></p>
+  </body>
+</html>
