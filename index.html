@@ -9,7 +9,20 @@
       name="description"
       content="atelier 立绘馆 · 养成角色图鉴、对白与场景工坊。"
     />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      (function () {
+        try {
+          var r = sessionStorage.getItem("spa-redirect");
+          if (r && r.indexOf("/a129-atelier") === 0) {
+            sessionStorage.removeItem("spa-redirect");
+            if (location.pathname + location.search + location.hash !== r) {
+              history.replaceState(null, "", r);
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body class="antialiased">
     <div id="root"></div>
