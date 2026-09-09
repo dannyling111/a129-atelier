@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F3EEE6" />
+    <title>atelier</title>
+    <meta
+      name="description"
+      content="atelier 立绘馆 · 养成角色图鉴、对白与场景工坊。"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      (function () {
+        try {
+          var r = sessionStorage.getItem("spa-redirect");
+          if (r && r.indexOf("/a129-atelier") === 0) {
+            sessionStorage.removeItem("spa-redirect");
+            if (location.pathname + location.search + location.hash !== r) {
+              history.replaceState(null, "", r);
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/a129-atelier/assets/index-B_3b855m.js"></script>
+    <link rel="modulepreload" crossorigin href="/a129-atelier/assets/store-DIrsSlw3.js">
+    <link rel="modulepreload" crossorigin href="/a129-atelier/assets/preload-helper-BM3HGXTo.js">
+    <link rel="stylesheet" crossorigin href="/a129-atelier/assets/styles-LbHQHM-i.css">
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+  </body>
+</html>
